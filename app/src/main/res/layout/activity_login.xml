@@ -126,6 +126,7 @@
             android:layout_weight="1"
             android:background="@drawable/buttonshape"
             android:text="Create An Account"
+            android:onClick="gotoRegister"
             android:textColor="@android:color/black"
             android:textStyle="bold" />
 
