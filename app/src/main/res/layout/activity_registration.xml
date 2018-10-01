@@ -12,7 +12,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".RegistrationActivity">
+    tools:context=".Activities.RegistrationActivity">
 
     <ImageView
         android:id="@+id/imageView"
@@ -24,12 +24,12 @@
         android:layout_marginStart="96dp"
         android:layout_marginTop="48dp"
         android:src="@drawable/thd_logo"
-        app:layout_constraintStart_toStartOf="@+id/regi_form"
+        app:layout_constraintStart_toStartOf="@+id/register_form"
         app:layout_constraintTop_toTopOf="parent" />
 
     <!-- Login progress -->
     <LinearLayout
-        android:id="@+id/regi_form"
+        android:id="@+id/register_form"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/imageView"
@@ -46,7 +46,7 @@
             android:layout_height="wrap_content">
 
             <AutoCompleteTextView
-                android:id="@+id/regi_email"
+                android:id="@+id/register_email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="E-Mail"
@@ -66,7 +66,7 @@
             android:layout_height="wrap_content">
 
             <AutoCompleteTextView
-                android:id="@+id/regi_usern"
+                android:id="@+id/register_username"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Username"
@@ -85,7 +85,7 @@
             android:layout_height="wrap_content">
 
             <EditText
-                android:id="@+id/regi_password"
+                android:id="@+id/register_password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Password"
@@ -106,7 +106,7 @@
             android:layout_height="wrap_content">
 
             <EditText
-                android:id="@+id/regi_conf_password"
+                android:id="@+id/register_conf_password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Re-Enter Password"
@@ -123,14 +123,22 @@
         </android.support.design.widget.TextInputLayout>
 
         <Button
-            android:id="@+id/regi_button"
+            android:id="@+id/register_button"
             style="?android:textAppearanceSmall"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:text="Register"
+            android:onClick="registerUser"
             android:background="@drawable/buttonshape"
             android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="75dp"
+            android:text="Already Registered? Sign in here"
+            android:textAlignment="center" />
 
     </LinearLayout>
 

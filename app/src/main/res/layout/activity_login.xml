@@ -12,7 +12,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".LoginActivity">
+    tools:context=".Activities.LoginActivity">
 
     <ImageView
         android:id="@+id/imageView"
@@ -24,12 +24,12 @@
         android:layout_marginStart="96dp"
         android:layout_marginTop="48dp"
         android:src="@drawable/thd_logo"
-        app:layout_constraintStart_toStartOf="@+id/email_login_form"
+        app:layout_constraintStart_toStartOf="@+id/layout_login_email"
         app:layout_constraintTop_toTopOf="parent" />
 
     <!-- Login progress -->
     <LinearLayout
-        android:id="@+id/email_login_form"
+        android:id="@+id/layout_login_email"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/imageView"
@@ -46,7 +46,7 @@
             android:layout_height="wrap_content">
 
             <AutoCompleteTextView
-                android:id="@+id/email"
+                android:id="@+id/login_email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="E-Mail"
@@ -66,7 +66,7 @@
             android:layout_height="wrap_content">
 
             <EditText
-                android:id="@+id/password"
+                android:id="@+id/login_password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Password"
@@ -83,7 +83,7 @@
         </android.support.design.widget.TextInputLayout>
 
         <Button
-            android:id="@+id/email_sign_in_button"
+            android:id="@+id/login_button_signin"
             style="?android:textAppearanceSmall"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -120,7 +120,7 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <Button
-            android:id="@+id/create_acc_button"
+            android:id="@+id/login_button_register"
             android:layout_width="60dp"
             android:layout_height="65dp"
             android:layout_weight="1"
@@ -132,7 +132,7 @@
 
 
         <Button
-            android:id="@+id/skip_wo_login"
+            android:id="@+id/login_skip_wo_login"
             android:layout_width="60dp"
             android:layout_height="65dp"
             android:layout_weight="1"
@@ -140,6 +140,7 @@
             android:text="Skip to view content"
             android:textColor="@android:color/black"
             android:textStyle="bold" />
+
 
 
     </LinearLayout>

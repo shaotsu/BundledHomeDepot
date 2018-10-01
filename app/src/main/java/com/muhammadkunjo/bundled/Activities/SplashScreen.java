@@ -1,9 +1,11 @@
-package com.muhammadkunjo.bundled;
+package com.muhammadkunjo.bundled.Activities;
 
 import android.os.Bundle;
 import android.content.Intent;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
+
+import com.muhammadkunjo.bundled.R;
 
 public class SplashScreen extends AppCompatActivity {
     private static int SPLASH_TIME_OUT = 3000;
